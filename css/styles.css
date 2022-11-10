@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Poppins:wght@300&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+}
+#main{
+  margin: 5px auto;
+  text-align: center;
+}
+#title{
+ font-size: 2.4rem;
+/*  text-align: center; */
+}
+img{
+  display: block;  
+}
+#image{
+  max-width: 90%;  
+  margin: 0 auto;
+}
+#tribute-info{
+  margin-top: 50px;
+}
+#tribute-info ul{
+  width: 600px;  
+  margin: 0px auto;
+  text-align: left;
+}
+.influence{
+  width: 850px;
+  margin: 50px auto;
+  font-size: 0.9rem;
+}
+#tribute-link{
+  text-decoration: none;
+  color: purple;
+}
+#tribute-link:hover{
+  text-decoration: none;
+  color: brown;
+}
+strong::before {
+    content: open-quote;
+}
+strong::after {
+    content: close-quote;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 720px){
+    #main p span{
+        display: block;        
+    }
+    #tribute-info ul{
+        max-width: 75%;        
+    }
+    .influence{
+        width: 99%;
+        max-width: 95%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 449px){
+  #title{
+    font-size: 1.75rem;
+   /*  text-align: center; */
+  }
+  #main p{
+    font-size: 1.15rem;
+  }
+  /* #main p span{
+    display: block;        
+  } */
+  #tribute-info ul{
+    max-width: 75%;
+    margin: 0px 5px;    
+  }
+  .influence{
+    width: 99%;
+    max-width: 95%;
+  }
+}
